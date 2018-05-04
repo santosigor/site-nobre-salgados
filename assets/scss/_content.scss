@@ -1,25 +1,15 @@
 body {
 	//font-family: 'Noto Sans';
+	background-attachment: fixed;
+	background-image: url("../../images/bg.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 b, strong {
-	font-weight: normal;
-	font-family: 'Noto Sans Bold';
-}
-
-.box-frase {
-	background: $red-ns;
-	color:$white;
-	padding: 40px 0;
-}
-
-#wrapper {
-	margin:0 auto;
-}
-
-.section-content {
-	min-height: 360px;
-	padding: 0 0 60px 0;
+	//font-weight: normal;
+	//font-family: 'Noto Sans Bold';
 }
 
 h1 {
@@ -32,7 +22,7 @@ h1 {
 			content: '';
 			width: 60px;
 			height:4px;
-			background: $red-ns;
+			background: $red;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -42,34 +32,44 @@ h1 {
 	}
 }
 
+.fx {
+	background: rgba(255,20,30,0.5);
+	padding: 80px 0;
+}
+
+.section-content {
+	min-height: 360px;
+	padding: 0 0 60px 0;
+	&#sct-1{
+
+	}
+	&#sct-2{
+	padding: 0;
+	}
+	&#sct-3{
+
+	}
+}
+
+
 // responsive
 
 @media (min-width: 1366.98px) {
-	#wrapper {
-		width: 1366px;
-	}
+	
 }
 
 @media (max-width: 1366px) {
-	#wrapper {
-		width: 1280px;
-	}
+	
 }
 
 @media (max-width: 1280px) {
-	#wrapper {
-		width: 1024px;
-	}
+	
 }
 
 @media (max-width: 1024px) {
-	#wrapper {
-		width: 768px;
-	}
+	
 }
 
 @media (max-width: 768px) {
-	#wrapper {
-		width: 100%;
-	}
+	
 }
