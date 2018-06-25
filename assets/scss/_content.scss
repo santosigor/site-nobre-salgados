@@ -1,5 +1,10 @@
+::selection {
+  background-color: $red!important;
+  color: #fff;
+  cursor: text;
+}
+
 body {
-	//font-family: 'Noto Sans';
 	background-attachment: fixed;
 	background-image: url("../../images/bg.jpg");
 	background-position: center center;
@@ -44,10 +49,53 @@ h1 {
 
 	}
 	&#sct-2{
-	padding: 0;
+		padding: 0;
+		.catalog {
+		  display: flex;
+		  flex-wrap: nowrap;
+		  overflow-x: auto;
+		  // cursor: move;
+		  // cursor:grab;
+			&::-webkit-scrollbar {
+			  height: 10px;
+			}
+			&::-webkit-scrollbar-thumb {
+			    background-color: rgb(255,20,30);
+			}
+			.catalog-item {
+			  display: block;
+			  flex: 0 0 auto;
+			  min-height:300px;
+			  width: 25%;
+			  &:nth-child(even) {background: #cccccc}
+    		&:nth-child(odd) {background: #dddddd}
+			  transition: 0.2s;
+			  cursor: pointer;
+			  text-align:center;
+			  padding-top: 130px;
+    		&:hover {
+    			background: $red;
+    			color: $white;
+    		}
+			}
+		}
+
 	}
 	&#sct-3{
-
+		img {
+			margin-bottom: 25px;		
+		}
+		.preco {
+			color: $white;
+			padding:5px 10px;
+			font-size: 18px;
+			&.bg-red {
+				background: $red;
+			}
+			&.bg-yellow {
+				background: $yellow;
+			}
+		}
 	}
 }
 

@@ -13,16 +13,38 @@
   </head>
   <body>
 
+    <div class="navbar-wrap">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a href="#" class="brand"><img src="images/logo-nb-salgados.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-uppercase" href="#">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Catálogo de produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Pacotes e promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase contato" href="#">Fale conosco</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <header class="d-flex text-center">
       <div class="content-header align-self-center">
-        <span class="d-block">
-          <img src="images/logo-nb-salgados.png">
-        </span>
-        <h2 class="text-uppercase">
-          Salgados fritinhos e deliciosos...
-        </h2>
+        <h2 class="text-uppercase">Dedicação e paixão pelo que fazemos, esse é o nosso segredo!</h2>
         <div class="scroll-header">
-          <a href="#sct-1" class="acr"><span></span><span></span><span></span></a>
+          <a href="#sct-1" class="acr"><span></span></a>
         </div>
       </div>
     </header>
@@ -58,8 +80,19 @@
 
     <section class="section-content" id="sct-2">
       <h1 class="title-one color-white">CATÁLOGO DE produtos</h1>
-      <div class="bg-gray-light">
-        
+      <div class="catalog">
+        <div class="catalog-item">
+          Aqui vai os produtos
+        </div>
+        <div class="catalog-item">
+          Aqui vai os produtos
+        </div>
+        <div class="catalog-item">
+          Aqui vai os produtos
+        </div>
+        <div class="catalog-item">
+          Aqui vai os produtos
+        </div>
       </div>
     </section>
 
@@ -69,18 +102,27 @@
         <div class="row">
           <div class="col-lg-4">
             <img src="images/image-model.jpg" alt="" class="img-fluid">
-            <p><b>title</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>
+              <b class="text-uppercase">title</b><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <span class="preco bg-red">R$ 45,00</span>
           </div>
           <div class="col-lg-4">
             <img src="images/image-model.jpg" alt="" class="img-fluid">
-            <p><b>title</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>
+              <b class="text-uppercase">title</b><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <span class="preco bg-yellow">R$ 45,00</span>
           </div>
           <div class="col-lg-4">
             <img src="images/image-model.jpg" alt="" class="img-fluid">
-            <p><b>title</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>
+              <b class="text-uppercase">title</b><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <span class="preco bg-red">R$ 45,00</span>
           </div>
         </div>
       </div>
@@ -104,6 +146,7 @@
     </footer>
 		
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 
   </body>

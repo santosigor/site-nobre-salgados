@@ -1,0 +1,31 @@
+.navbar-wrap {
+	background: $white;
+	padding-top:80px;
+	.navbar {
+		background: $red;
+		padding: 0;
+		.brand {
+			@media (min-width: 768px) {
+				position:absolute;
+			}
+			img {
+				max-width: 140px;
+			}
+		}
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					padding: 1em 1rem;
+			    color: $white;
+			    transition: 0.2s;
+			    &:hover {
+			    	background: rgba(0,0,0,0.2);
+			    }
+					&.contato {
+			    	background: rgba(0,0,0,0.2);
+					}
+				}
+			}
+		}
+	}
+}

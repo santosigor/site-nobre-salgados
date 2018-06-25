@@ -1,72 +1,57 @@
 header {
-	height:100vh;
+	height:70vh;
+	max-height: 1000px;
 	color: $white;
+	position: relative;
 	.content-header {
 		width: 100%;
-		img {
-			max-width: 200px;
-		  margin-bottom: 40px;
-		}
+		max-width:660px;
+		margin:0 auto;
+		margin-bottom: 60px;
 		h2 {
-		  margin-bottom: 40px;
-		  background: rgba(234,160,13,0.5);
-		  padding:20px;
+			padding:40px 0;
+		  margin:0;
+		  border-top: 1px dotted #fabc65;
+		  border-bottom: 1px dotted #fabc65;
 		}
 		.scroll-header {
 			a {
-			  position:relative;
-			  display:inline-block;
-			 	padding-bottom: 65px;
+			  position: absolute;
+			  bottom: 60px;
+			  left: 50%;
+			  margin-left: -12px;
 				span {
-				  position: absolute;
-				  top: 0;
-				  left: 50%;
+					display: inline-block;
 				  width: 24px;
 				  height: 24px;
-				  margin-left: -12px;
 				  border-left: 1px solid #fff;
 				  border-bottom: 1px solid #fff;
 				  -webkit-transform: rotate(-45deg);
 				  transform: rotate(-45deg);
-				  -webkit-animation: sdb07 2s infinite;
-				  animation: sdb07 2s infinite;
-				  opacity: 0;
+				  -webkit-animation: sdb04 2s infinite;
+				  animation: sdb04 2s infinite;
 				  box-sizing: border-box;
-					&:nth-of-type(1) {
-					  -webkit-animation-delay: 0s;
-					  animation-delay: 0s;
-					}
-					&:nth-of-type(2) {
-					  top: 16px;
-					  -webkit-animation-delay: .15s;
-					  animation-delay: .15s;
-					}
-					&:nth-of-type(3) {
-					  top: 32px;
-					  -webkit-animation-delay: .3s;
-					  animation-delay: .3s;
-					}
 				}
-				@-webkit-keyframes sdb07 {
+				@-webkit-keyframes sdb04 {
 				  0% {
-				    opacity: 0;
+				    -webkit-transform: rotate(-45deg) translate(0, 0);
 				  }
-				  50% {
-				    opacity: 1;
+				  20% {
+				    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
 				  }
-				  100% {
-				    opacity: 0;
+				  40% {
+				    -webkit-transform: rotate(-45deg) translate(0, 0);
 				  }
 				}
-				@keyframes sdb07 {
+				@keyframes sdb04 {
 				  0% {
-				    opacity: 0;
+				    transform: rotate(-45deg) translate(0, 0);
 				  }
-				  50% {
-				    opacity: 1;
+				  20% {
+				    transform: rotate(-45deg) translate(-10px, 10px);
 				  }
-				  100% {
-				    opacity: 0;
+				  40% {
+				    transform: rotate(-45deg) translate(0, 0);
 				  }
 				}
 			}
