@@ -21,35 +21,46 @@ h1 {
 	&.title-one {
 		text-align: center;
 		position: relative;
-		padding: 60px 0 60px 0;
+		padding: 120px 0 60px 0;
 		text-transform: uppercase;
 		&:before {
 			content: '';
-			width: 60px;
-			height:4px;
-			background: $red;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-left: -20px;
-			margin-top: 40px;
+	    width: 60px;
+	    height: 4px;
+	    background: $red;
+	    position: absolute;
+	    bottom: 16%;
+	    left: 50%;
+	    margin-left: -20px;
 		}
 	}
 }
 
+@media (min-width: 1200px) {
+	.container {
+	  max-width: 980px;
+	}
+}
+
 .fx {
-	background: rgba(255,20,30,0.4);
-	padding: 80px 0;
+	background-color: rgba(255,20,30,0.3);
+	background-image: url("../../images/mask.png");
+	padding: 180px 0;
+	.container {
+	  background: url("../../images/icon-quote.png") no-repeat top left;
+	  padding:40px 0 0 80px;
+	}
 }
 
 .section-content {
 	min-height: 360px;
-	padding: 0 0 60px 0;
+	padding: 0 0 120px 0;
 	&#sct-1{
 
 	}
 	&#sct-2{
 		padding: 0;
+		background-image: url("../../images/mask.png");
 		.catalog {
 		  display: flex;
 		  flex-wrap: nowrap;

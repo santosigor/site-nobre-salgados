@@ -1,8 +1,9 @@
 header {
-	height:70vh;
-	max-height: 1000px;
+	height:85vh;
+	max-height: 650px;
 	color: $white;
 	position: relative;
+	background-image: url("../../images/mask.png");
 	.content-header {
 		width: 100%;
 		max-width:660px;
