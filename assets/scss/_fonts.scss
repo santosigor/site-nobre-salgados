@@ -1,10 +1,31 @@
 @font-face {
-  font-family: 'Noto Sans';
-  src: url('../font/NotoSans.eot');
-  src: url('../font/NotoSans.eot?#iefix') format('embedded-opentype'),
-      url('../font/NotoSans.woff2') format('woff2'),
-      url('../font/NotoSans.woff') format('woff'),
-      url('../font/NotoSans.ttf') format('truetype');
+  font-family: 'Harabara Bold';
+  src: url('../font/harabara-bold.woff2') format('woff2'),
+       url('../font/harabara-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harabara';
+  src: url('../font/harabara.woff2') format('woff2'),
+       url('../font/harabara.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harabara Black';
+  src: url('../font/harabara-black.woff2') format('woff2'),
+       url('../font/harabara-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harabara Light';
+  src: url('../font/harabara-light.woff2') format('woff2'),
+  		 url('../font/harabara-light.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
 }

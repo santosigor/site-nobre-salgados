@@ -9,6 +9,8 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	font-family: 'Harabara';
+
 	&::-webkit-scrollbar {
     width: 8px;
 	}
@@ -20,12 +22,13 @@ body {
 	}
 }
 
-b, strong {
-	//font-weight: normal;
-	//font-family: 'Noto Sans Bold';
+b, strong, h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: 'Harabara Bold';
 }
 
 h1 {
+	font-family: 'Harabara Black';
 	&.title-one {
 		text-align: center;
 		position: relative;
@@ -46,8 +49,13 @@ h1 {
 
 @media (min-width: 1200px) {
 	.container {
-	  max-width: 980px;
+	  max-width: 1024px;
 	}
+}
+
+ul {
+	margin:0;
+	padding:0 0 0 15px;
 }
 
 .fx {
@@ -57,6 +65,9 @@ h1 {
 	.container {
 	  background: url("../../images/icon-quote.png") no-repeat top left;
 	  padding:40px 0 0 80px;
+	  h1 {
+	  	font-family: 'Harabara Black';
+	  }
 	}
 }
 
@@ -104,7 +115,7 @@ h1 {
 		    			height: 120px;
 		    			//margin-bottom:25px;
 		    			.st0{fill: #333;}
-		    			.st1{font-family:'MyriadPro-Regular';}
+		    			.st1{font-family: 'Harabara Bold';}
 		    			.st2{font-size:180px;}
 		    		}
 			  	}

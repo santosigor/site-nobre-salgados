@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Harabara Mais';
+    src: url('HarabaraMaisBold-HarabaraMaisBold.woff2') format('woff2'),
+        url('HarabaraMaisBold-HarabaraMaisBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harabara Mais';
+    src: url('HarabaraMais-HarabaraMais.woff2') format('woff2'),
+        url('HarabaraMais-HarabaraMais.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harabara Mais';
+    src: url('HarabaraMaisBlack-HarabaraMaisBlack.woff2') format('woff2'),
+        url('HarabaraMaisBlack-HarabaraMaisBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harabara Mais';
+    src: url('HarabaraMaisLight-HarabaraMaisLight.woff2') format('woff2'),
+        url('HarabaraMaisLight-HarabaraMaisLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
