@@ -36,7 +36,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 	}
 	section {
-		margin: 7.5rem 0 0 0;
+		padding: 7.5rem 0 0 0;
+   	position: relative;
 		@media (min-width: 1200px) {
 			display: -webkit-box;
 	    display: -ms-flexbox;
@@ -48,12 +49,34 @@ h1, h2, h3, h4, h5, h6 {
 		header {
 			padding: 0 10rem 0 5rem;
     	text-align: right;
+    	position: relative;
     	h2 {
-    		position: relative;
     		margin-bottom: 5rem;
     		font-size: 1.25rem;
     		font-weight: 800;
 		    text-transform: uppercase;
+		    position: relative;
+		    &:before {
+			    background: #b5353a;
+			    content: '';
+			    display: block;
+			    height: 3px;
+			    position: absolute;
+			    top: 1rem;
+			    right: -5.5rem;
+    			width: 2.5rem;
+				}
+				&:after {
+			    background: #b5353a;
+			    border-radius: 0.5rem;
+			    content: '';
+			    display: block;
+			    height: 0.6rem;
+			    position: absolute;
+			    top: 0.75rem;
+			    width: 0.6rem;
+			    right: -3rem;
+				}
     	}
 			* {
 				width: 20rem;
@@ -66,9 +89,19 @@ h1, h2, h3, h4, h5, h6 {
 				margin: 0 0 2rem 0;
 			}
 		}
+		&:before {
+	    background: #b5353a;
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    width: 2px;
+			height: 100%;
+			top:0 ;
+  		left: calc(50vw - 5rem);
+		}
 	}
 	.intro {
-		margin: 0;
+		padding: 0;
 		transition: opacity 1s ease;
 		header {
 			transition: transform 1s ease;
@@ -80,6 +113,28 @@ h1, h2, h3, h4, h5, h6 {
 		    line-height: 0.9;
 		    margin-top: 0;
 		    margin-bottom: 3rem;
+		    position: relative;
+		    &:before {
+			    background: #b5353a;
+			    content: '';
+			    display: block;
+			    height: 3px;
+			    position: absolute;
+			    top: 3rem;
+			    right: -5.5rem;
+    			width: 2.5rem;
+				}
+				&:after {
+			    background: #b5353a;
+			    border-radius: 0.5rem;
+			    content: '';
+			    display: block;
+			    height: 0.6rem;
+			    position: absolute;
+			    top: 2.75rem;
+			    width: 0.6rem;
+			    right: -3rem;
+				}
 			}
 			p {
 				text-transform: uppercase;
@@ -106,6 +161,10 @@ h1, h2, h3, h4, h5, h6 {
 			    width: 3rem;
 				}
 			}
+			&:before {
+        left: auto;
+        margin-left: calc(50vw - 10rem);
+			}
 		}
 		.content {
 			transition: transform 1s ease;
@@ -127,6 +186,11 @@ h1, h2, h3, h4, h5, h6 {
 					height: 100%;
 				}
 			}
+		}
+		&:before {
+			height: calc(100% - 13.95em);
+			top:auto;
+			bottom:0;
 		}
 	}
 }
