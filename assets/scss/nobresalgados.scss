@@ -13,99 +13,41 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Harabara Bold';
   font-weight: 600;
   letter-spacing: 0.175em;
-  line-height: 1.75;
+  line-height: 1.25;
   margin: 0 0 1.5rem 0;
   color: #ffffff;
 }
 
+#selo {
+	position: fixed;
+	top: 0;
+	left:10px;
+	img {
+		width: 170px;
+	}
+}
+
 #wrapper {
-	position: relative;
-	&:before {
-		transition: opacity 1s ease;
-    background-color: #ed1b24;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    @media (min-width: 1200px) {
-    	width: calc(50% + 1px);
-    }
-	}
+	background: #ed1b24;
 	section {
-		padding: 7.5rem 0 0 0;
-   	position: relative;
-		@media (min-width: 1200px) {
-			display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: flex;
-			header, .content {
-				width: 50vw;
-			}
-		}
-		header {
-			padding: 0 10rem 0 5rem;
-    	text-align: right;
-    	position: relative;
-    	h2 {
-    		margin-bottom: 5rem;
-    		font-size: 1.25rem;
-    		font-weight: 800;
-		    text-transform: uppercase;
-		    position: relative;
-		    &:before {
-			    background: #b5353a;
-			    content: '';
-			    display: block;
-			    height: 3px;
-			    position: absolute;
-			    top: 1rem;
-			    right: -5.5rem;
-    			width: 2.5rem;
-				}
-				&:after {
-			    background: #b5353a;
-			    border-radius: 0.5rem;
-			    content: '';
-			    display: block;
-			    height: 0.6rem;
-			    position: absolute;
-			    top: 0.75rem;
-			    width: 0.6rem;
-			    right: -3rem;
-				}
-    	}
-			* {
-				width: 20rem;
-				margin-left: auto;
-			}
-		}
-		.content {
-			padding: 0 5rem;
-			p {
-				margin: 0 0 2rem 0;
-			}
-		}
+		overflow: hidden;
+		position: relative;
 		&:before {
-	    background: #b5353a;
+	    background: #e4bc67;
 	    content: '';
-	    display: block;
 	    position: absolute;
+	    left: calc(50% - 4.5rem);
+	    top:0;
 	    width: 2px;
-			height: 100%;
-			top:0 ;
-  		left: calc(50vw - 5rem);
+	    height: 100%;
 		}
-	}
-	.intro {
-		padding: 0;
-		transition: opacity 1s ease;
-		header {
-			transition: transform 1s ease;
-			color:#fff;
+		.title, .content {
+			width: 50%;
+			float: left;
+		}
+		.title {
+			padding: 7rem 10rem 0 5rem;
+			text-align: right;
 			h1 {
 				font-size: 5.5rem;
 		    font-weight: 700;
@@ -115,30 +57,31 @@ h1, h2, h3, h4, h5, h6 {
 		    margin-bottom: 3rem;
 		    position: relative;
 		    &:before {
-			    background: #b5353a;
+			    background: #e4bc67;
 			    content: '';
 			    display: block;
-			    height: 3px;
+			    height: 2px;
 			    position: absolute;
-			    top: 3rem;
+			    top: calc(50% - 1px);
 			    right: -5.5rem;
     			width: 2.5rem;
 				}
 				&:after {
-			    background: #b5353a;
+			    background: #e4bc67;
 			    border-radius: 0.5rem;
 			    content: '';
 			    display: block;
-			    height: 0.6rem;
+			    height: 0.5rem;
 			    position: absolute;
-			    top: 2.75rem;
-			    width: 0.6rem;
+			    top: calc(50% - 4px);
+			    width: 0.5rem;
 			    right: -3rem;
 				}
 			}
 			p {
 				text-transform: uppercase;
 		    margin-bottom: 3rem;
+		    color:#fff;
 			}
 			* {
 				width: 20rem;
@@ -161,36 +104,60 @@ h1, h2, h3, h4, h5, h6 {
 			    width: 3rem;
 				}
 			}
-			&:before {
-        left: auto;
-        margin-left: calc(50vw - 10rem);
+			h2 {
+    		margin-bottom: 5rem;
+    		font-weight: 800;
+		    position: relative;
+		    &:before {
+			    background: #e4bc67;
+			    content: '';
+			    display: block;
+			    height: 2px;
+			    position: absolute;
+			    top: calc(50% - 1px);
+			    right: -5.5rem;
+    			width: 2.5rem;
+				}
+				&:after {
+			    background: #e4bc67;
+			    border-radius: 0.5rem;
+			    content: '';
+			    display: block;
+			    height: 0.5rem;
+			    position: absolute;
+			    top: calc(50% - 4px);
+			    width: 0.5rem;
+			    right: -3.1rem;
+				}
+    	}
+			* {
+				width: 20rem;
 			}
 		}
 		.content {
-			transition: transform 1s ease;
-			overflow: hidden;
-			padding: 0;
-			img {
-				width: 100%;
+			background: #fff;
+			padding: 7em 4.5em 0 4.5rem;
+			p {
+				margin: 0 0 2rem 0;
 			}
 		}
-		@media (min-width: 1200px) {
-			height: 100vh;
-			header {
-				-ms-flex-item-align: center;
-    		align-self: center;
+		&.intro {
+			&:before {
+		    top:40vh;
+			}
+			.title, .content {
+				height: 100vh;
+			}
+			.title {
+				padding: 0 10rem 0 5rem;
 			}
 			.content {
+				overflow: hidden;
+				padding: 0;
 				img {
-					width: auto;
 					height: 100%;
 				}
 			}
-		}
-		&:before {
-			height: calc(100% - 13.95em);
-			top:auto;
-			bottom:0;
 		}
 	}
 }
