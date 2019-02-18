@@ -22,10 +22,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul, ol {
-  list-style: none;
-  list-style-image: none;
   margin: 0;
   padding: 0;
+  margin: 0 0 2rem 0;
 }
 
 @mixin clearfix() {
@@ -61,6 +60,7 @@ ul, ol {
 		&.nbs-intro {
 			.nbs-title, .nbs-content {
 				height: 100vh;
+				max-height: 723px;
 			}
 			.nbs-title {
 				display: flex;
@@ -107,6 +107,11 @@ ul, ol {
 				overflow: hidden;
 				padding: 0;
 				position: relative;
+				background-color: #fff;
+		    background-position: bottom center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-image: url('../images/image-header.jpg');
 				&:before {
 			    background: rgba(194, 26, 30, 0.2);
 			    content: '';
@@ -115,9 +120,6 @@ ul, ol {
 			    top:0;
 			    width: 100%;
 			    height: 100%;
-				}
-				img {
-					height: 100%;
 				}
 			}
 		}
@@ -171,7 +173,14 @@ ul, ol {
 				p {
 					margin: 0 0 2rem 0;
 					&.mg-b-0 {
-						margin: 0;
+						margin-bottom: 0;
+					}
+				}
+				ul {
+					padding-left: 15px;
+					li {
+						float: left;
+						width: 50%;
 					}
 				}
 				img {
