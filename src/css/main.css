@@ -298,9 +298,10 @@ ul, ol {
   background-image: url("../images/bg-intro.png"); }
   #nbsWrapper section {
     position: relative; }
-    #nbsWrapper section .nbs-title, #nbsWrapper section .nbs-content {
-      width: 50%;
-      float: left; }
+    @media (min-width: 992px) {
+      #nbsWrapper section .nbs-title, #nbsWrapper section .nbs-content {
+        width: 50%;
+        float: left; } }
     #nbsWrapper section.nbs-intro .nbs-title, #nbsWrapper section.nbs-intro .nbs-content {
       height: 100vh;
       max-height: 723px; }

@@ -54,8 +54,10 @@ ul, ol {
 	section {
 		position: relative;
 		.nbs-title, .nbs-content {
-			width: 50%;
-			float: left;
+			@media (min-width: 992px) {
+				width: 50%;
+				float: left;
+			}
 		}
 		&.nbs-intro {
 			.nbs-title, .nbs-content {
