@@ -1,0 +1,113 @@
+body {
+	position:relative;
+	background: #fff;
+	color:#333;
+	padding:6.5% 0 0 0;
+}
+
+.icone-bottom-fixed {
+	position:fixed;
+	bottom:28px;
+	right:28px;
+	width:52px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-family: Cabin,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+ul {
+	width:100%;
+	max-width:840px;
+	margin:0 auto;
+	padding:0;
+}
+
+ul li {
+	display:block;
+	width:50%;
+	float:left;
+}
+
+ul li:first-child {
+	border-right:1px solid #bbb;
+	text-align:right;
+	padding: 70px;
+}
+
+ul li:first-child img{
+	display:inline-block;
+	max-width:100%;
+}
+
+ul li:last-child  {
+	padding:126px 0 126px 60px;
+}
+
+ul li:last-child strong {
+	font-size:20px;
+	color:#ee2b29;
+}
+
+ul li:last-child span{
+	font-style:italic;
+	font-family: Georgia;
+}
+
+.telefone {
+	padding: 3px 0 8px 42px;
+	margin-top: 30px;
+	background:url(../img/tel.png) no-repeat;
+	width: 225px;
+}
+
+.facebook {
+	padding: 3px 0 8px 42px;
+	background:url(../img/facebook.png) no-repeat;
+	margin:10px 0;
+	width: 225px;
+}
+
+.email {
+	padding: 3px 0 8px 42px;
+	background:url(../img/mail.png) no-repeat;
+	width: 225px;
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		padding:0;
+	}
+	.icone-bottom-fixed {
+		display:none;
+	}
+	ul {
+		padding:50px 30px;
+	}
+	ul li {
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	ul li:first-child {
+		text-align:center;
+		padding:0 0 20px 0;
+		border-right:0;
+		border-bottom:1px solid #bbb;
+	}
+	ul li:first-child img{
+		max-width:230px;
+	}
+	ul li:last-child {
+		padding:30px 20px;
+	}
+	.email, .telefone, .facebook {
+		margin:0 auto;
+		margin-bottom:10px;
+		text-align:left;
+	}
+	.telefone {
+		margin-top:30px;
+	}
+}
